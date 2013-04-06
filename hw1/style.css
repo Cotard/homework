@@ -10,8 +10,8 @@ html,body {
 html {
 	background-image: url("./img/background.jpg");
 	}
-	
-header {
+
+.line {
 	background:#000;
 	height:3px;
 	}
@@ -35,7 +35,7 @@ header {
 	text-decoration:none;
 	}
 
-.news {
+.headline {
 	font-family:PT Serif;
 	font-weight:bold; 
 	font-size:54pt;
@@ -44,16 +44,46 @@ header {
 	
 .sru {
 	width:220px;
-	margin:0 auto;
+	margin:0 auto 100px auto;
 	}
 	
 .sru ul {
 	-webkit-padding-start: 0;
 	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 	}
 	
 .sru ul li{
 	display:inline-block;
 	font-size:13pt;
 	}
+
+/* news block*/
+.wrap {
+	width:840px;
+	margin:0 auto;
+	}	
 	
+.news {
+	padding-left:270px;
+	display:block;
+	}
+
+.title {
+	font-size:13pt;
+	color:#000;
+	}
+	
+.left {
+	float:left;
+	}
+	
+.freedom {
+	position:absolute;
+	margin-left:-60px;
+	margin-top:-77px;
+	width:90px;
+	height:30px;
+	background-color:#ff6666;
+	text-align:center;
+	}
