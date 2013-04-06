@@ -1,0 +1,59 @@
+html,body {
+    height:100%;
+    margin:0;
+    padding:0;
+	min-width:750px;
+	min-height:650px;
+	font-family: PT Sans;
+	}
+	
+html {
+	background-image: url("./img/background.jpg");
+	}
+	
+header {
+	background:#000;
+	height:3px;
+	}
+	
+.head {
+	margin-bottom:30px;
+	}
+	
+.logo {
+	margin:10px;
+	display:inline-block;
+	font-weight: bold; 
+	}
+	
+.login {
+	margin:10px;
+	float:right;
+	display:inline-block;
+	color:#666666;
+	border-bottom:1px dotted;
+	text-decoration:none;
+	}
+
+.news {
+	font-family:PT Serif;
+	font-weight:bold; 
+	font-size:54pt;
+	text-align:center;
+	}
+	
+.sru {
+	width:220px;
+	margin:0 auto;
+	}
+	
+.sru ul {
+	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	}
+	
+.sru ul li{
+	display:inline-block;
+	font-size:13pt;
+	}
+	
