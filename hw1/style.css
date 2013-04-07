@@ -2,7 +2,7 @@ html,body {
     height:100%;
     margin:0;
     padding:0;
-	min-width:750px;
+	min-width:910px;
 	min-height:650px;
 	font-family:PT Sans;
 	}
@@ -59,13 +59,14 @@ html {
 	}
 
 /* news block*/
-.wrap {
+.wrap, .foot {
 	width:840px;
-	margin:0 auto;
+	margin:0 auto 100px auto;
 	}	
 
 .news {
-	min-height: 100px;
+	min-height:100px;
+	margin-bottom:50px;
 	}
 	
 .article {
@@ -85,22 +86,42 @@ html {
 .left {
 	float:left;
 	}
-	
-.freedom {
+
+.freedom, .equality, .upchk {
 	position:absolute;
 	margin-left:-40px;
-	margin-top:-12px;
-	width:65px;
+	width:80px;
 	height:25px;
 	line-height:25px;
-	background-color:#ff6666;
 	font-size: 11pt;
 	text-align:center;
 	font-style:italic;
 	color:#FFF;
 	}
 	
-/* Всплывающее окно */	
+.freedom {
+	margin-top:-106px;
+	background-color:#ff6666;
+	}
+	
+.equality {
+	margin-top:-106px;
+	background-color:#99cc66;
+	}
+	
+.upchk {
+	margin-top:-90px;
+	background-color:#6699cc;
+	}
+
+/* Днище */
+.foot {
+	height:100px;
+	font-size: 9pt;
+	color:#707070;
+	}
+	
+/* popup */	
 #popup {
 	display: none; 
 	position: relative; 
