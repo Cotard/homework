@@ -8,7 +8,7 @@ html,body {
 	}
 	
 html {
-	background-image: url("./img/background.jpg");
+	background-image:url("./img/background.jpg");
 	}
 
 .line {
@@ -23,16 +23,23 @@ html {
 .logo {
 	margin:10px;
 	display:inline-block;
-	font-weight: bold; 
+	font-weight:bold; 
+	}
+	
+.login, .close {
+	margin:10px;
+	float:right;
+	color:#666666;
+	text-decoration:none;
+	border-bottom:1px dotted;
 	}
 	
 .login {
-	margin:10px;
-	float:right;
 	display:inline-block;
-	color:#666666;
-	border-bottom:1px dotted;
-	text-decoration:none;
+	}
+	
+.close {
+	font-size:14px;
 	}
 
 .headline {
@@ -151,6 +158,7 @@ html {
 	background-color:#FFF; 
 	box-shadow:0 0 55px;
 }
+
 #loginForm {
 	padding:60px;
 	}
@@ -172,15 +180,6 @@ button {
 	width:70px;
 	}
 	
-.close {
-	margin:10px;
-	float:right;
-	font-size:14px;
-	text-decoration:none;
-	color:#666666;
-	border-bottom:1px dotted;
-	}
-
 .btnLogin {
 	display:inline-block;
 	}
