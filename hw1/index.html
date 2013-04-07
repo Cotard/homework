@@ -12,12 +12,18 @@
 		<div class="head">
 			<div class="line">
 			</div>
+			
 			<div class="logo">
 				LOREM IPSUM NEWS
 			</div>
-			<a href="#" class="login">
+			
+			<a class="login" 
+			onmouseover='this.style.cursor="pointer"'
+			onfocus='this.blur();' 
+			onclick="document.getElementById('popup').style.display='block'">
 				Войти
 			</a>
+			
 		</div>	<!-- head -->
 		
 		<div class="headline">
@@ -35,15 +41,32 @@
 	</header>
 	
 	<div class="wrap">
-		<img class="left" src="./img/freedom.jpg" alt="freedom" />
-		<a href="#" class="news title">Заголовок</a>
 		<div class="news">
-		История о том, как возле столовой появились загадочные розовые 
-		следы с шестью пальцами, и почему это случилось. 
-		</div>
-		<div class="freedom">
-			Свобода
-		</div>
-	</div>	<!-- section -->
+			<img class="left" src="./img/wikipedia.jpg" alt="freedom" />
+			<div class="article">
+				<a href="#" class="title">«Википедию» внесли в реестр запрещенных сайтов</a>
+				<div>
+				Об этом 5 апреля сообщается в твиттере российской версии энциклопедии. 
+				«Вот оно наконец и случилось: нас внесли в чёрный список (дважды?) 
+				за статью «Курение каннабиса»», — говорится в сообщении. 
+				Пометка «дважды?» может означать, что в реестр попали две страницы сайта.
+				На момент написания заметки была доступна как главная страница «Википедии»,
+				так и статья о курении.
+				</div>
+			</div><!-- article -->
+			<div class="freedom">
+				Свобода
+			</div>
+		</div><!-- news -->
+		<br>
+
+	</div>	<!-- wrap -->
+	
+	<!-- Всплывающее окно -->
+
+	 <div id="popup">
+		  <div id="background" ></div><!-- затененный фон -->
+		  <div id="window"></div><!-- всплывающее окно -->
+	 </div>
 </body>
 </html>
