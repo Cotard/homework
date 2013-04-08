@@ -43,7 +43,7 @@ html {
 	}
 
 .headline {
-	font:bold 72px 'PT Serif';
+	font:bold 72px 'PT Serif', serif;
 	text-align:center;
 	}
 	
