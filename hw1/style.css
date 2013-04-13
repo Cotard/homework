@@ -1,7 +1,7 @@
 html,body {
-    height:100%;
-    margin:0;
-    padding:0;
+	height:100%;
+	margin:0;
+	padding:0;
 	min-width:910px;
 	min-height:650px;
 	font-family:PT Sans;
@@ -11,16 +11,14 @@ html {
 	background-image:url("./img/background.jpg");
 	}
 
-.line {
-	background:#000;
-	height:3px;
+a {
+	color:#000;
 	}
-	
 .head {
-	margin-bottom:30px;
+	border-top:3px solid;
 	}
 	
-.logo {
+.logo {	
 	margin:10px;
 	display:inline-block;
 	font-weight:bold; 
@@ -43,6 +41,7 @@ html {
 	}
 
 .headline {
+	margin: 5px;
 	font:bold 72px 'PT Serif', serif;
 	text-align:center;
 	}
@@ -69,32 +68,43 @@ html {
 	margin:0 auto 100px auto;
 	}	
 
-.news {
-	min-height:100px;
-	margin-bottom:50px;
+.clearfix {
+	margin-bottom:30px;
 	}
 	
-.article {
-	margin-left:200px;
+.clearfix:before,
+.clearfix:after {
+    content:" "; /* 1 */
+    display:table; /* 2 */
+	}
+	
+.clearfix:after {
+    clear:both;
+	}
+	
+.article_text {
+	float:right;
 	width:640px;
 	font-size:10pt;
 	}
 
 .title {
-	display: block;
+	display:block;
+	margin:0;
 	font-size:13pt;
 	font-weight:bold;
 	color:#000;
 	margin-bottom:5px;
 	}
 	
-.left {
+.image_block {
 	float:left;
 	}
 
 .freedom, .equality, .upchk {
 	position:absolute;
 	margin-left:-40px;
+	margin-top:-115px;
 	width:80px;
 	height:25px;
 	line-height:25px;
@@ -105,22 +115,21 @@ html {
 	}
 	
 .freedom {
-	margin-top:-106px;
 	background-color:#ff6666;
 	}
 	
 .equality {
-	margin-top:-106px;
 	background-color:#99cc66;
 	}
 	
 .upchk {
-	margin-top:-90px;
 	background-color:#6699cc;
 	}
 
-/* Днище */
+/* dniwe */
 .foot {
+	border-top:1px solid #707070;
+	padding-top:5px;
 	height:100px;
 	font-size:9pt;
 	color:#707070;
@@ -134,7 +143,7 @@ html {
 	margin:-750px auto 0 auto;
 	}
 	
-#background { 
+#popup-background { 
 	width:100%; 
 	height:100%; 
 	left:0; 
@@ -142,12 +151,10 @@ html {
 	position:fixed;
 	z-index:2; 
 	background-color:#000; 
-	filter:alpha(opacity=75);
-	-moz-opacity:0.75; 
-	opacity:0.75; 
- }
+	opacity:0.5; 
+	}
  
-#window {
+#popup-window {
 	width:370px; 
 	height:230px; 
 	margin:0 auto; 	
@@ -155,9 +162,9 @@ html {
 	z-index:3; 
 	background-color:#FFF; 
 	box-shadow:0 0 55px;
-}
+	}
 
-#loginForm {
+#login_form {
 	padding:60px;
 	}
 
@@ -167,17 +174,21 @@ input {
     border:1px solid #e5e5e5;
 	border-top-color:#a3a3a3;
 	border-left-color:#c6c6c6;
-    border-top-style:solid;
+	border-top-style:solid;
     box-shadow:inset 0 1px 2px 0 #e5e5e5;
 	padding:5px 7px;
 	font-size:14px;   
 	color:#666666;
-}
+	}
+
+.field {
+	margin-bottom:20px;
+	}
 	
 button {
 	width:70px;
 	}
 	
-.btnLogin {
+.btn_login {
 	display:inline-block;
 	}
