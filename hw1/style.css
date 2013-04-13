@@ -16,9 +16,11 @@ a {
 	}
 .head {
 	border-top:3px solid;
+	text-align:center;
 	}
 	
 .logo {	
+	float:left;
 	margin:10px;
 	display:inline-block;
 	font-weight:bold; 
@@ -192,3 +194,27 @@ button {
 .btn_login {
 	display:inline-block;
 	}
+
+/* Homework 1.1*/	
+nav {
+	display: inline-block;
+	}
+
+nav ul {
+	-webkit-padding-start: 0;
+	}
+	
+nav ul li {
+	display:inline-block;
+	}
+	
+.username {
+	float:right;
+	display:inline-block;
+	}
+	
+.title_big {
+	font:bold 24px 'PT Serif', serif;
+	text-align:center;
+	}
+	
