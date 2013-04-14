@@ -64,14 +64,14 @@ a {
 	}
 
 /* news block*/
-.wrap, .foot {
+.indent {
+	margin-bottom:30px;
+	}
+
+.wrap_all_news, .foot {
 	width:840px;
 	margin:0 auto 100px auto;
 	}	
-
-.clearfix {
-	margin-bottom:30px;
-	}
 	
 .clearfix:before,
 .clearfix:after {
@@ -235,7 +235,12 @@ nav ul li a:hover, nav ul li:first-child  a{
 	}
 	
 /* article */
-	
+
+.wrap_news {
+	width:840px;
+	margin:0 auto 50px auto;
+	}
+
 .title_big {
 	font:bold 24px 'PT Serif', serif;
 	margin:50px 0;
@@ -266,6 +271,11 @@ aside {
 
 	
 /* section */
+.wrap_rubrucs {
+	width:840px;
+	margin:0 auto 20px auto;
+	}
+
 .other {
 	display:inline-block;
 	font-size:10pt;
@@ -287,6 +297,7 @@ section ul {
 	}
 	
 section ul li {
+	float:left;
 	width:190px;
 	margin-right:10px;
 	display:inline-block;
