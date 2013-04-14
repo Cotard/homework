@@ -204,6 +204,8 @@ nav {
 
 nav ul {
 	-webkit-padding-start: 0;
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
 	}
 	
 nav ul li {
@@ -211,18 +213,21 @@ nav ul li {
 	margin-right:30px;
 	}
 
-a{
+nav ul li a{
 	color:#003366;
 	text-decoration: none;
 	border-bottom: 1px solid #003366;
+	font-size:10pt;
 	}	
 	
-nav ul li:first-child  a{
+nav ul li a:hover, nav ul li:first-child  a{
 	text-decoration:none;
 	font-weight:bold;
 	color:#000;
 	border-bottom: 0;
 	}
+		
+		
 		
 .username {
 	float:right;
@@ -254,7 +259,7 @@ aside {
 	padding-top:170px;
 	padding-left:40px;
 	line-height: 1.5;
-	color:#707070;
+	color:#666666;
 	font-family:Verdana;
 	font-size:11px;
 	}
@@ -268,23 +273,54 @@ aside {
 	}
 
 .other_materials {
+	width:800px;
+	float:left;
+	padding-top:5px;
 	margin-left:40px;
-	border-top: 3px solid #707070;
-	padding-top:10px;
+	border-top: 3px solid #b1b1b1;
+	color:#333333;
 	}
 	
 section ul {
-	float:right;
 	-webkit-padding-start: 0;
+	-webkit-margin-before: 0.5em;
 	}
 	
 section ul li {
-	width:180px;
+	width:190px;
+	margin-right:10px;
 	display:inline-block;
+	}
+	
+section ul li:last-child {
+	margin-right:0;
+	}
+	
+section ul li a {
+	color:#003366;
+	font-size:10pt;
+	}
+	
+.wrap_other {
+	width:600px;
+	float:right;
+	}
+	
+.small_title {
+	font-weight:normal;
+	margin:5px 0;
+	}
+
+.other_news {
+	-webkit-margin-before: 0;
+	font-size:11px;
+	color:#333333;
 	}
 	
 	
 	
+	
+/* i need refactoring!1 */	
 .foot_1 {
 	margin-left:40px;
 	border-top:1px solid #707070;
@@ -293,3 +329,5 @@ section ul li {
 	font-size:9pt;
 	color:#707070;
 	}
+	
+	
