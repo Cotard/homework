@@ -16,13 +16,12 @@ a {
 	}
 .head {
 	border-top:3px solid;
-	text-align:center;
 	}
 	
 .logo {	
 	float:left;
-	margin:10px;
 	display:inline-block;
+	margin:10px;
 	font-weight:bold; 
 	}
 	
@@ -83,11 +82,12 @@ a {
 .clearfix:after {
     clear:both;
 	}
+
 	
-.article_text {
-	float:right;
-	width:640px;
-	font-size:10pt;
+.article_text  {
+	float: right;
+	width: 640px;
+	font-size:14px;
 	}
 
 .title {
@@ -197,7 +197,9 @@ button {
 
 /* Homework 1.1*/	
 nav {
-	display: inline-block;
+	position: absolute;
+	left: 50%;
+	margin-left:-180px;
 	}
 
 nav ul {
@@ -205,16 +207,89 @@ nav ul {
 	}
 	
 nav ul li {
-	display:inline-block;
+	display:inline;
+	margin-right:30px;
 	}
+
+a{
+	color:#003366;
+	text-decoration: none;
+	border-bottom: 1px solid #003366;
+	}	
 	
+nav ul li:first-child  a{
+	text-decoration:none;
+	font-weight:bold;
+	color:#000;
+	border-bottom: 0;
+	}
+		
 .username {
 	float:right;
 	display:inline-block;
 	}
 	
+/* article */
+	
 .title_big {
 	font:bold 24px 'PT Serif', serif;
-	text-align:center;
+	margin:50px 0;
+	margin-bottom:50px;
 	}
 	
+article  {
+	float: right;
+	width: 600px;
+	}		
+
+.text {
+	font-size:14px;	
+	}
+	
+/* aside */
+
+aside {
+	float:left;
+	width:180px;
+	padding-top:170px;
+	padding-left:40px;
+	line-height: 1.5;
+	color:#707070;
+	font-family:Verdana;
+	font-size:11px;
+	}
+
+	
+/* section */
+.other {
+	display:inline-block;
+	font-size:10pt;
+	font-weight:bold;
+	}
+
+.other_materials {
+	margin-left:40px;
+	border-top: 3px solid #707070;
+	padding-top:10px;
+	}
+	
+section ul {
+	float:right;
+	-webkit-padding-start: 0;
+	}
+	
+section ul li {
+	width:180px;
+	display:inline-block;
+	}
+	
+	
+	
+.foot_1 {
+	margin-left:40px;
+	border-top:1px solid #707070;
+	padding-top:5px;
+	height:100px;
+	font-size:9pt;
+	color:#707070;
+	}
