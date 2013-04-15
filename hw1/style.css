@@ -159,9 +159,11 @@ a {
 #popup-window {
 	width:370px; 
 	height:230px; 
-	margin:0 auto; 	
-	position:relative; 
+	position:fixed; 
 	z-index:3; 
+	top: 35%;
+	left: 50%;
+	margin-left:-185px;
 	background-color:#FFF; 
 	box-shadow:0 0 55px;
 	}
