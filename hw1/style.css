@@ -253,6 +253,9 @@ article  {
 	font-size:14px;	
 	}
 	
+p a {
+	color:#003366;
+	}
 /* aside */
 
 aside {
@@ -326,10 +329,10 @@ section ul li a {
 	}
 	
 	
-#user-nav {
-	float:right;
-	width: 120px;
-	height: 25px;
+#profile {	
+	position:absolute;
+	right:0;
+	top:0;
 	background: linear-gradient(0deg, #dbdbdb, #FFF);
 	margin: 10px 10px 0 30px;
 	border-radius: 13px;
@@ -337,10 +340,35 @@ section ul li a {
 	}
 		
 .username {
-	margin: 2px 0 0 35px;
+	margin: 2px 15px 2px 25px;
 	color:#666666;
 	text-shadow: 1px 1px 0 #FFF;
 	}
+	
+.user-nav {
+	display:none;
+	padding:0;
+    margin:10px 0 0 25px;
+	}
+	
+#profile:hover  .user-nav {
+    display: block;
+}
+
+.user-nav li {
+    display: block;
+    margin-bottom: 7px;
+	color:#666666;
+}
+
+.user-nav li a{
+	color:#666666;
+}
+
+.user-nav {
+    font-size:14px;
+    color: #666666;
+}
 	
 .triangle-down-grey {
     width: 0;
@@ -361,17 +389,10 @@ section ul li a {
     border-right: 5px solid transparent;
     border-top: 5px solid #FFF;
 	margin-top:12px;
-	margin-left:17px;
+	margin-left:12px;
 }	
 
-/*.triangle_wrap {
-	float:left;
-	width:7px;
-	height:7px;
-	margin-top:10px;
-	margin-left:15px;
-	}*/
-	
+
 /* i need refactoring!1 */	
 .foot_1 {
 	margin-left:40px;
