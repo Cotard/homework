@@ -38,6 +38,13 @@ a {
 	}
 
 p {
+	&.username:before {
+		font-family: Verdana;
+		font-size: 10px;
+		content: "▼"; 
+		margin-right: 5px;
+		}
+
 	a {
 		color:@2page-links-color;
 		}
@@ -173,7 +180,7 @@ ul {
 	display:none; 
 	position:relative; 
 	z-index:1; 
-	.center (-750px, 0);
+	.center(-750px, 0);
 	}
 	
 #popup-background { 
@@ -255,12 +262,12 @@ nav {
 
 .wrap_news {
 	width:@content-width;
-	.center (0, 50px);
+	.center(0, 50px);
 	}
 
 .title_big {
 	.PTserif(normal, 24px);
-	.center (50px, 50px);
+	.center(50px, 50px);
 	}
 	
 article  {
@@ -348,16 +355,19 @@ section {
 	top:0;
 	margin: 10px 10px 0 30px;
 	.gradient(~"linear-gradient(0deg, #dbdbdb, #fff)"); /* lesshat-mixin*/
-	.border-radius(13px);/* lesshat-mixin*/
-	.box-shadow(1px, 1px, 5px, rgba(0,0,0,0.3)); /* lesshat-mixin*/
+	.border-radius(13px); 								/* lesshat-mixin*/
+	.box-shadow(1px, 1px, 5px, rgba(0,0,0,0.3)); 		/* lesshat-mixin*/
+
+		&:hover .user-nav {
+		    display: block;
+			}
+
+		&:hover p.username:before {
+			content: "▲"; 
+		}
 	}
 		
-p.username:before {
-	font-family: Verdana;
-	font-size: 10px;
-	content: "▼"; 
-	margin-right: 5px;
-}
+
 .username {
 	margin: 2px 12px;
 	color:@aside-blocks-color;
@@ -374,18 +384,8 @@ p.username:before {
 		    display: block;
 		    margin-bottom: 7px;
 
-			a{
+			a {
 				color:@aside-blocks-color;
+				}
 			}
-		}
 	}
-	
-#profile:hover .user-nav {
-    display: block;
-}
-
-#profile:hover p.username:before {
-	content: "▲"; 
-}
-
-	
