@@ -20,7 +20,6 @@ a {
 	
 .logo {	
 	float:left;
-	display:inline-block;
 	margin:10px;
 	font-weight:bold; 
 	}
@@ -28,7 +27,7 @@ a {
 .login, .close {
 	margin:10px;
 	float:right;
-	color:#666666;
+	color:#666;
 	text-decoration:none;
 	border-bottom:1px dotted;
 	}
@@ -182,7 +181,7 @@ input {
     box-shadow:inset 0 1px 2px 0 #e5e5e5;
 	padding:5px 7px;
 	font-size:14px;   
-	color:#666666;
+	color:#666;
 	}
 
 .field {
@@ -201,7 +200,7 @@ button {
 nav {
 	position: absolute;
 	left: 50%;
-	margin-left:-180px;
+	margin-left:-220px;
 	}
 
 nav ul {
@@ -223,16 +222,6 @@ nav ul li a{
 	font-size:10pt;
 	}	
 	
-nav ul li a:hover, nav ul li:first-child  a{
-	text-decoration:none;
-	font-weight:bold;
-	color:#000;
-	border-bottom: 0;
-	}
-		
-		
-
-	
 /* article */
 
 .wrap_news {
@@ -248,7 +237,7 @@ nav ul li a:hover, nav ul li:first-child  a{
 	
 article  {
 	float: right;
-	width: 600px;
+	width: 640px;
 	}		
 
 .text {
@@ -264,9 +253,8 @@ aside {
 	float:left;
 	width:180px;
 	padding-top:170px;
-	padding-left:40px;
 	line-height: 1.5;
-	color:#666666;
+	color:#666;
 	font-family:Verdana;
 	font-size:11px;
 	}
@@ -288,9 +276,8 @@ aside {
 	width:800px;
 	float:left;
 	padding-top:5px;
-	margin-left:40px;
 	border-top: 3px solid #b1b1b1;
-	color:#333333;
+	color:#333;
 	}
 	
 section ul {
@@ -327,7 +314,7 @@ section ul li a {
 .other_news {
 	-webkit-margin-before: 0;
 	font-size:11px;
-	color:#333333;
+	color:#333;
 	}
 	
 	
@@ -341,9 +328,15 @@ section ul li a {
 	box-shadow: 1px 1px 5px rgba(0,0,0,0.3)
 	}
 		
+p.username:before {
+	font-family: Verdana;
+	font-size: 10px;
+	content: "▼"; 
+	margin-right: 5px;
+}
 .username {
-	margin: 2px 15px 2px 25px;
-	color:#666666;
+	margin: 2px 12px;
+	color:#666;
 	text-shadow: 1px 1px 0 #FFF;
 	}
 	
@@ -357,47 +350,27 @@ section ul li a {
     display: block;
 }
 
+#profile:hover p.username:before {
+	content: "▲"; 
+}
+
 .user-nav li {
     display: block;
     margin-bottom: 7px;
-	color:#666666;
+	color:#666;
 }
 
 .user-nav li a{
-	color:#666666;
+	color:#666;
 }
 
 .user-nav {
     font-size:14px;
-    color: #666666;
+    color: #666;
 }
-	
-.triangle-down-grey {
-    width: 0;
-    height: 0;
-	float:left;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #8f8f8f;
-	margin-top:-6px;
-	margin-left:-6px;
-}	
-
-.triangle-down-white {
-    width: 0;
-    height: 0;
-	float:left;
-    border-left: 5px solid transparent;
-    border-right: 5px solid transparent;
-    border-top: 5px solid #FFF;
-	margin-top:12px;
-	margin-left:12px;
-}	
-
 
 /* i need refactoring!1 */	
 .foot_1 {
-	margin-left:40px;
 	border-top:1px solid #707070;
 	padding-top:5px;
 	height:100px;
