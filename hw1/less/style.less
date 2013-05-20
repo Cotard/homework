@@ -1,6 +1,6 @@
 ﻿/*	 sizes  	*/
-@text-width: 75%;
-@content-width: 80%;
+@text-width: 590px;
+@content-width: 800px;
 
 /*	 colors 	*/
 @freedom-color: #ff6666;
@@ -139,7 +139,7 @@ ul {
 	
 .image_block {
 	float:left;
-	padding-right: 20px;
+	padding-right: 30px;
 	}
 
 .freedom, .equality, .upchk {
@@ -187,7 +187,6 @@ ul {
 	height:100%; 
 	left:0; 
 	top:0;
-	position:fixed;
 	z-index:2; 
 	-webkit-filter:none;
 	}
@@ -269,7 +268,7 @@ nav {
 	}
 	
 article  {
-	float: right;
+	float: left;
 	width: @text-width;
 	}		
 
@@ -283,6 +282,7 @@ article  {
 aside {
 	float:left;
 	width:180px;
+	padding-right: 30px;
 	padding-top:170px;
 	line-height: 1.5;
 	color:@aside-blocks-color;
@@ -299,13 +299,14 @@ aside {
 
 .other {
 	display:inline-block;
+	width: 210px;
+	padding-bottom: 20px;
+	float: left;
 	font-size:10pt;
 	font-weight:bold;
 	}
 
 .other_materials {
-	width:@content-width;
-	float:left;
 	padding-top:5px;
 	border-top: 3px solid #b1b1b1;
 	color:#333;
@@ -321,6 +322,11 @@ section {
 				width:190px;
 				margin-right:10px;
 				display:inline-block;
+				
+				&:last-child {
+					margin-right:0;
+				}
+
 
 				a {
 					color:@2page-links-color;
@@ -331,8 +337,8 @@ section {
 	}
 	
 .wrap_other {
-	width:600px;
-	float:right;
+	width:590px;
+	float:left;
 	}
 	
 .small_title {
@@ -396,38 +402,17 @@ section {
 	opacity: 0.4;
 }
 
-/*Adaptive------------------------------------------------*/
-@media (max-width:1050px) {
-	@text-width: 65%;
-
-	.wrap_all_news, .foot {
-		width:@content-width;
-		.center(0, 100px);
-		}
-
-	.article_text  {
-		width: @text-width;
-		}
-}
-
-@media (max-width:740px) {
-	@text-width: 60%;
-
-	.wrap_all_news, .foot {
-		width:@content-width;
-		.center(0, 100px);
-		}
-
-	.article_text  {
-		width: @text-width;
-		}
-}
-
 
 /*iPhone--------------------------------------------------*/
 
 @media (max-width:640px) {
-	@text-width: 50%;
+	#popup-background {
+		width:640px;
+	}
+
+	.wrap_all_news, .foot {
+		width: 600px;
+		}
 
 	.image_block {
 		padding-right: 40px;
@@ -436,22 +421,16 @@ section {
 	.title {
 		margin-top: 20px;
 		float: left;
-		width: @text-width;
+		width: 350px;
 		font-size: 14pt;
 		}
 
 	.article_text  {
 		margin: 10px 0;
-		width: 100%;
 		}
 
 	.freedom, .equality, .upchk {
 		margin-left: 140px;
 		}
-}
-
-@media (max-width:550px) {
-	.title {
-		width: 100%;
-		}
+	
 }
