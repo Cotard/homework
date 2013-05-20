@@ -9,15 +9,21 @@
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 </head>
 <body>
+	<div id="background-dark"> </div>
+	<div id="popup-background">
 	<header>
-	
+		
 		<div class="head clearfix">
 			
 			<div class="logo"> LOREM IPSUM NEWS </div>
 			
 			<a class="login" 
 			onmouseover='this.style.cursor="pointer"'
-			onclick="document.getElementById('popup').style.display='block'">
+			onclick="document.getElementById('popup').style.display='block'; 
+			document.getElementById('background-dark').style.display='block'; 
+			document.getElementById('popup-background').setAttribute('style', '-webkit-filter: blur(4px) contrast(50%)');
+			document.getElementById('popup-background').setAttribute('background-color', '#000');
+			document.getElementById('popup-background').setAttribute('opacity', '0.5');">
 				Войти
 			</a>
 			
@@ -45,12 +51,12 @@
 					<em>Свобода</em>
 				</p>
 			</div>
-			<div class="article_text">
-				<h2 class="title"><a href="http://cotard.github.io/homework/hw1/hw1_1.html">Страны Евросоюза могут ввести санкции против Google</a></h2>
-				<p>
-					Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться информация с нескольких десятков разных сайтов.
-				</p>
-			</div><!-- article text -->
+			<h2 class="title">
+				<a href="http://cotard.github.io/homework/hw1/hw1_1.html">Страны Евросоюза могут ввести санкции против Google</a>
+			</h2>
+			<p class="article_text">
+				Европейские власти обеспокоены политикой конфиденциальности компании Google. Google хранит личные данные пользователей в одном профиле, в котором может объединяться информация с нескольких десятков разных сайтов.
+			</p>
 		</div><!-- clearfix -->
 		
 		
@@ -61,15 +67,15 @@
 					<em>Равенство</em>
 				</p>				
 			</div>
-			<div class="article_text">
-				<h2 class="title"><a href="#">Британский журналист, изучавший бомжей, замерз насмерть на улице</a></h2>
-				<p>
-					В Великобритании погиб журналист, снимавший документальный фильм о жизни бездомных. 
-					Он замерз насмерть на улице, решив пожить жизнью героев своего фильма.
-					Тело 27-летнего Ли Халпина было найдено в заброшенном здании в городе Ньюкасл. 
-					Судебные медики установили, что причиной смерти репортера стало переохлаждение.
-				</p>
-			</div><!-- article text -->
+			<h2 class="title">
+				<a href="#">Британский журналист, изучавший бомжей, замерз насмерть на улице</a>
+			</h2>
+			<p class="article_text">
+				В Великобритании погиб журналист, снимавший документальный фильм о жизни бездомных. 
+				Он замерз насмерть на улице, решив пожить жизнью героев своего фильма.
+				Тело 27-летнего Ли Халпина было найдено в заброшенном здании в городе Ньюкасл. 
+				Судебные медики установили, что причиной смерти репортера стало переохлаждение.
+			</p>
 
 		</div><!-- clearfix -->
 
@@ -80,15 +86,14 @@
 					<em>Упячка</em>
 				</p>			
 			</div>
-			<div class="article_text">
-				<h2 class="title"><a href="#">Около тысячи человек пришли посмотреть на «Упоротого лиса»</a></h2>
-				<p>
-					Около 1 тысячи человек пришли посмотреть на «Упоротого лиса», которого представила 
-					жителям Петербурга создательница знаменитого чучела Адель Морзе, сообщила РИА Новости PR-директор
-					Geometria cafe Ксения Шалак.
-				</p>
-			</div><!-- article text-->
-
+			<h2 class="title">
+				<a href="#">Около тысячи человек пришли посмотреть на «Упоротого лиса»</a>
+			</h2>
+			<p class="article_text"> 
+				Около 1 тысячи человек пришли посмотреть на «Упоротого лиса», которого представила 
+				жителям Петербурга создательница знаменитого чучела Адель Морзе, сообщила РИА Новости PR-директор
+				Geometria cafe Ксения Шалак.
+			</p>
 		</div><!-- clearfix -->
 		
 	</div>	<!-- wrap news -->
@@ -98,9 +103,10 @@
 	</footer>
 	<!-- Всплывающее окно -->
 
+		</div><!-- затененный фон -->
+
 	 <div id="popup">
 	 
-		<div id="popup-background"></div><!-- затененный фон -->
 		  
 		<div id="popup-window">
 		
@@ -121,7 +127,11 @@
 
 			    <a class="close" style="float: none;" 
 				onmouseover="this.style.cursor='pointer';" 
-				onclick="document.getElementById('popup').style.display='none';"> 
+				onclick="document.getElementById('popup').style.display='none'; 
+				document.getElementById('background-dark').style.display='none'; 
+				document.getElementById('popup-background').setAttribute('style', '-webkit-filter: none');
+				document.getElementById('popup-background').setAttribute('background-color', '');
+				document.getElementById('popup-background').setAttribute('opacity', '1');"> 
 					Отмена 
 				</a>
 			   
