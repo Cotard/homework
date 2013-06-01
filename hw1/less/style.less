@@ -405,12 +405,23 @@ section {
 
 
 .comments {
-	width: 800px;
+	width: 840px;
 	margin: 0 auto;
 }
 
-.add_comment {
+.wrap_comments {
+	padding: 20px;
+	background: #fff;
 	margin-left: 210px;
+	margin-bottom: 40px;
+}
+
+.comments_amount {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.add_comment {
 	width: 590px;
 }
 
@@ -472,7 +483,6 @@ textarea {
 .comment_messages {
 
 	font-size: 12px;
-	margin-left: 210px;
 
 	.comment_message {
 
@@ -496,7 +506,7 @@ textarea {
 			
 		}
 
-		.foot_comments {	
+		.foot_comments, .foot_comments_last {	
 			margin: 5px 0 25px 0;
 			padding-bottom: 15px;
 			border-bottom: solid 1px #a3a3a3;
@@ -505,10 +515,17 @@ textarea {
 			color:@2page-links-color;
 			}
 		}
+
+		.foot_comments_last {
+			border-bottom: none;
+		}
 	}
 }
 
-
+.comment_answer {
+	margin-left: 50px;
+	min-width: 300px;
+}
 
 
 /*iPhone--------------------------------------------------*/

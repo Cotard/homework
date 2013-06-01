@@ -94,85 +94,129 @@
 
 	</div>	<!-- wrap this news -->
 	
+
+
 	<section class = "comments ">
-		<div class = "add_comment clearfix">
-			<textarea class = "author " placeholder="Представьтесь, пожалуйста"></textarea>
-			<textarea class = "comment " placeholder="Введите текст сообщения..."></textarea>
-			<div class = "comment_button">
-				Комментировать
-			</div>	
+		<div class = "wrap_comments">
+			<div class = "comments_amount">
+				Комментарии (100500)
+			</div>
+			<div class = "add_comment clearfix">
+				<textarea class = "author " placeholder="Представьтесь, пожалуйста"></textarea>
+				<textarea class = "comment " placeholder="Введите текст сообщения..."></textarea>
+				<div class = "comment_button">
+					Комментировать
+				</div>	
+			</div>
+
+			<div class = "comment_messages">
+				<div id = "1" class = "comment_message">
+					<header class = "head_comments">
+						<strong class = "author_name ">
+							Константин
+						</strong>
+						<span class = "time">
+							2:23, понедельник, 24.05.2013
+						</span>
+					</header>
+					<span class = "comment_text">
+						<p>
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
+						</p>
+						<p>
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
+						</p>
+					</span>
+					<footer class = "foot_comments">
+						<a href="#" onclick = "answer(1); return false;" >
+							Ответить
+						</a>
+					</footer>
+				</div>		
+
+				<div id = "2" class = "comment_message ">
+					<header class = "head_comments">
+						<strong class = "author_name ">
+							Константин
+						</strong>
+						<span class = "time">
+							2:21, понедельник, 24.05.2013
+						</span>
+					</header>
+					<span class = "comment_text">
+						<p>
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+						</p>
+					</span>
+					<footer class = "foot_comments">
+						<a href="#" onclick = "answer(2); return false;" >
+							Ответить
+						</a>
+					</footer>
+
+					<!-- ответ на сообщение-->
+					<div id = "3" class = "comment_message comment_answer">
+						<header class = "head_comments">
+							<strong class = "author_name ">
+								Константин
+							</strong>
+							<span class = "time">
+								2:29, понедельник, 24.05.2013
+							</span>
+						</header>
+						<span class = "comment_text">
+							<p>
+								бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+								бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							</p>
+							<p>
+								бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+								бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							</p>
+						</span>
+						<footer class = "foot_comments">
+							<a href="#" onclick = "answer(3); return false;" >
+								Ответить
+							</a>
+						</footer>
+					</div>					
+				</div>
+
+				<div id = "4" class = "comment_message ">
+					<header class = "head_comments">
+						<strong class = "author_name ">
+							Константин
+						</strong>
+						<span class = "time">
+							2:13, понедельник, 24.05.2013
+						</span>
+					</header>
+					<span class = "comment_text">
+						<p>
+							> бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
+						</p>
+						<p>
+							бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
+						</p>
+					</span>
+					<footer class = "foot_comments_last">
+						<a href="#" onclick = "answer(4); return false;" >
+							Ответить
+						</a>
+					</footer>
+				</div>
+					
+			</div>
 		</div>
-
-		<div class = "comment_messages ">
-			<div class = "comment_message ">
-				<header class = "head_comments">
-					<strong class = "author_name ">
-						Константин
-					</strong>
-					<span class = "time">
-						2:23, понедельник, 24.05.2013
-					</span>
-				</header>
-				<span class = "comment_text">
-					<p>
-						бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-						бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-						бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-						бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
-					</p>
-					<p>
-						бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла.
-					</p>
-				</span>
-				<footer class = "foot_comments">
-					<a href="#">
-						Ответить
-					</a>
-				</footer>
-			</div>		
-
-			<div class = "comment_message ">
-				<header class = "head_comments">
-					<strong class = "author_name ">
-						Константин
-					</strong>
-					<span class = "time">
-						2:23, понедельник, 24.05.2013
-					</span>
-				</header>
-				<span class = "comment_text">
-					бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-					бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-				</span>
-				<footer class = "foot_comments">
-					<a href="#">
-						Ответить
-					</a>
-				</footer>
-			</div>			
-
-			<div class = "comment_message ">
-				<header class = "head_comments">
-					<strong class = "author_name ">
-						Константин
-					</strong>
-					<span class = "time">
-						2:23, понедельник, 24.05.2013
-					</span>
-				</header>
-				<span class = "comment_text">
-					бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-					бла-бла-бла. бла-бла-бла. бла-бла-бла. бла-бла-бла. 
-				</span>
-				<footer class = "foot_comments">
-					<a href="#">
-						Ответить
-					</a>
-				</footer>
-			</div>										
-		</div>
-
 	</section>
+
 
 
 	<section class="wrap_rubrucs clearfix">
