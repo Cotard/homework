@@ -5,6 +5,10 @@ $('#profile').hover(function(event){
     $('.user-nav').slideToggle("fast");  
 });
 
+$('textarea').focus(function(){
+    $(this).parent().children('.validation_error').hide();
+});
+
 //var $add_comment = $(".add_comment").clone(false).addClass("newElement");
 var $add_comment = $("#hidden_add_comment");
 
