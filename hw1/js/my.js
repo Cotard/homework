@@ -1,7 +1,6 @@
 $('.validation_error').hide();
 $('#hidden_add_comment').hide();
 
-
 $('#profile').hover(function(event){    
     $('.user-nav').slideToggle("fast");  
 });
@@ -19,7 +18,8 @@ $('footer a').click(function(event){
 		$add_comment.appendTo($(this).parent().children('div'));
         $add_comment.hide();
         $add_comment.show("fast");
-        $add_comment.addClass("clicked")
+        $add_comment.addClass("clicked");
+        $('.validation_error').hide();
     }
     else
         if ($add_comment.hasClass("clicked"))
