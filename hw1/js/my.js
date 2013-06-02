@@ -1,17 +1,22 @@
+$('.validation_error').hide();
+$('#hidden_add_comment').hide();
+
+
 $('#profile').hover(function(event){    
     $('.user-nav').slideToggle("fast");  
 });
 
-var $add_comment = $(".add_comment").clone();
+//var $add_comment = $(".add_comment").clone(false).addClass("newElement");
+var $add_comment = $("#hidden_add_comment");
 
 $('footer a').click(function(event){
    	event.stopPropagation();
     var $comment = $(this).parent().parent();
-	var list = $comment.find('.add_comment');
+	var list = $comment.find($add_comment);
 	if (list.length == 0)
 	{
         $add_comment.children("textarea").val('');
-		$add_comment.appendTo($(this));
+		$add_comment.appendTo($(this).parent().children('div'));
         $add_comment.hide();
         $add_comment.show("fast");
         $add_comment.addClass("clicked")
@@ -29,4 +34,16 @@ $(function(){
     	$add_comment.hide("fast");
     	event.stopPropagation();
   });
+});
+
+
+$('button').click(function(event){ 
+    var val1 = $(this).parent().children('.author'),
+        val2 = $(this).parent().children('.comment');
+    if (val1.val() == '' || val2.val() == '')
+    {
+        $(this).parent().children('.validation_error').show();  
+    }
+    else
+        $(this).parent().children('.validation_error').hide();  
 });
