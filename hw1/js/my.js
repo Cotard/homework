@@ -1,5 +1,7 @@
+var $add_comment = $("#hidden_add_comment");
+
 $('.validation_error').hide();
-$('#hidden_add_comment').hide();
+$add_comment.hide();
 
 $('#profile').hover(function(event){    
     $('.user-nav').slideToggle("fast");  
@@ -9,8 +11,6 @@ $('textarea').focus(function(){
     $(this).parent().children('.validation_error').hide();
 });
 
-//var $add_comment = $(".add_comment").clone(false).addClass("newElement");
-var $add_comment = $("#hidden_add_comment");
 
 $('footer a').click(function(event){
    	event.stopPropagation();
@@ -27,8 +27,10 @@ $('footer a').click(function(event){
     }
     else
         if ($add_comment.hasClass("clicked"))
+        {
+            $('.validation_error').hide();
             $add_comment.show("fast");
-   
+        }        
 });
 
 $(function(){
